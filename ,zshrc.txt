@@ -1,0 +1,9 @@
+####### zsh alias file for commands 
+###### also need set_target.sh for set_target to work
+alias rustscan='sudo docker run -it --rm --name rustscan rustscan/rustscan:2.1.1'
+alias argrep='grep -a10 -b10' 
+alias nmap_all='sudo nmap -sV -sC -oN nmap_scan_all -p-'
+alias gobust_quick='gobuster dir  -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php  -o go_bust -e'
+alias set_target='. /home/kali/set_target.sh'
+### custom env
+target=
